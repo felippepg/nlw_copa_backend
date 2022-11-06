@@ -41,4 +41,27 @@ export async function gameRoutes(fastify: FastifyInstance) {
       })
     }
   });
+
+  fastify.post("/games", {
+    onRequest:[authenticate]
+  }, async (request) => {
+    const gameDataProps = z.object({
+      date: z.string(),
+      firstTeamCode: z.string(),
+      secondTeamCode: z.string()
+    });
+
+    const { date, firstTeamCode, secondTeamCode } = gameDataProps.parse(request.body);
+
+    const game = await prisma.game.create({
+      data: {
+        date: date,
+        firstTeamCountryCode: firstTeamCode,
+        secondTeamCountryCode: secondTeamCode
+      }
+    });
+
+    return { game }
+
+  })
 }

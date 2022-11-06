@@ -10,7 +10,7 @@ export async function guessRoutes(fastify: FastifyInstance) {
   });
 
   //criar um palpite de um jogo especifico de um bolão
-  fastify.post("/pool/:poolId/games/:gameÌd", {
+  fastify.post("/pools/:poolId/games/:gameÌd/guesses", {
     onRequest: [authenticate]
   }, async (request, reply) => {
     const createGuessParams = z.object({
@@ -88,4 +88,5 @@ export async function guessRoutes(fastify: FastifyInstance) {
 
     return reply.status(201).send()
   });
+
 }
