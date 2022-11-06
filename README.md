@@ -5,10 +5,10 @@
 </h1>
 
 ## Descrição do Projeto
-O Projeto foi desenvovlido no NLW Copa, evento disponibilizado pela [Rocketseat](https://lp.rocketseat.com.br/nlw) na trilha Ignite, nesse projeto desenvolvemos uma aplicação completa, [frontend](https://github.com/felippepg/nlw_copa_frontend), [backend](https://github.com/felippepg/nlw_copa_backend) e [mobile](https://github.com/felippepg/nlw_copa_mobile) e autenticação com o Google
-Esse repositório diz respeito ao Backend, o mesmo foi construido em Node Js utilizando o [Prisma](https://www.prisma.io) dados para desenvolvimento foi o [SQlite](https://www.sqlite.org/index.html)
+O Projeto foi desenvovlido no NLW Copa, evento disponibilizado pela [Rocketseat](https://lp.rocketseat.com.br/nlw) na trilha Ignite, nesse projeto desenvolvemos uma aplicação completa, [frontend](https://github.com/felippepg/nlw_copa_frontend), [backend](https://github.com/felippepg/nlw_copa_backend) e [mobile](https://github.com/felippepg/nlw_copa_mobile), com autenticação com o Google.
+Esse repositório diz respeito ao Backend, o mesmo foi construido em Node Js utilizando o [Prisma](https://www.prisma.io) como ORM e o banco de dados para desenvolvimento utilizado foi o [SQlite](https://www.sqlite.org/index.html)
 Para validar os dados da requisição foi utilizado uma biblioteca chamada ZOD onde podemos tipar os dados já fazendo uma validação.
-Também foi utilizado o [Fastify](https://www.fastify.io/) dar com as requisições web
+Também foi utilizado o [Fastify](https://www.fastify.io/) para lidar com as requisições web
 
 
 ## 🛠 Tecnologias
