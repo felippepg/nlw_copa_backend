@@ -6,7 +6,7 @@ import { authenticate } from "../plugins/authenticate";
 
 export async function authRoutes(fastify: FastifyInstance) {
   //retorna informações do usuário logado
-  fastify.post('/me', {
+  fastify.get('/me', {
     //verifica se o token é válido (semelhante aos middlewares do Express)
     onRequest: [authenticate]
   }, async (request) => {
